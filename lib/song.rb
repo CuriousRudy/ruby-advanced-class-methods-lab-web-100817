@@ -64,7 +64,6 @@ class Song
     words = filename.split(" - ")
     title = words[1].gsub ".mp3" , ""
     artist = words[0]
-
     track = self.create_by_name(title)   #make a new Song and on instantiation add to @@all
     track.artist_name = artist
     track   #return the value
